@@ -12,7 +12,8 @@ const bookSchema=new mongoose.Schema({
     deletedAt: {type:Date}, 
     isDeleted: {type:Boolean, default: false},
     releasedAt: {type:Date,required:true},
-   
+    bookCoverKey:{type:String}
+
 },{timestamp:true})
 
 module.exports=mongoose.model("Book",bookSchema)
